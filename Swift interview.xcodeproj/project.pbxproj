@@ -9,21 +9,19 @@
 /* Begin PBXBuildFile section */
 		1BAA0F7425E15DD50034549F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAA0F7325E15DD50034549F /* AppDelegate.swift */; };
 		1BAA0F7625E15DD50034549F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAA0F7525E15DD50034549F /* SceneDelegate.swift */; };
-		1BAA0F7825E15DD50034549F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAA0F7725E15DD50034549F /* ViewController.swift */; };
-		1BAA0F7B25E15DD50034549F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BAA0F7925E15DD50034549F /* Main.storyboard */; };
 		1BAA0F7D25E15DD60034549F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BAA0F7C25E15DD60034549F /* Assets.xcassets */; };
 		1BAA0F8025E15DD60034549F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BAA0F7E25E15DD60034549F /* LaunchScreen.storyboard */; };
+		1BAA0F9525E15F590034549F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAA0F9425E15F590034549F /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1BAA0F7025E15DD50034549F /* Swift interview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift interview.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BAA0F7325E15DD50034549F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BAA0F7525E15DD50034549F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1BAA0F7725E15DD50034549F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1BAA0F7A25E15DD50034549F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1BAA0F7C25E15DD60034549F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BAA0F7F25E15DD60034549F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BAA0F8125E15DD60034549F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BAA0F9425E15F590034549F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +54,70 @@
 		1BAA0F7225E15DD50034549F /* Swift interview */ = {
 			isa = PBXGroup;
 			children = (
-				1BAA0F7325E15DD50034549F /* AppDelegate.swift */,
-				1BAA0F7525E15DD50034549F /* SceneDelegate.swift */,
-				1BAA0F7725E15DD50034549F /* ViewController.swift */,
-				1BAA0F7925E15DD50034549F /* Main.storyboard */,
-				1BAA0F7C25E15DD60034549F /* Assets.xcassets */,
-				1BAA0F7E25E15DD60034549F /* LaunchScreen.storyboard */,
-				1BAA0F8125E15DD60034549F /* Info.plist */,
+				1BAA0F8E25E15E9B0034549F /* Injected */,
+				1BAA0F8D25E15E820034549F /* Resources */,
+				1BAA0F8925E15E510034549F /* System */,
+				1BAA0F8C25E15E760034549F /* UI */,
 			);
 			path = "Swift interview";
+			sourceTree = "<group>";
+		};
+		1BAA0F8925E15E510034549F /* System */ = {
+			isa = PBXGroup;
+			children = (
+				1BAA0F7325E15DD50034549F /* AppDelegate.swift */,
+				1BAA0F7525E15DD50034549F /* SceneDelegate.swift */,
+				1BAA0F8125E15DD60034549F /* Info.plist */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		1BAA0F8C25E15E760034549F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1BAA0F9125E15EBF0034549F /* Storyboards */,
+				1BAA0F9025E15EB80034549F /* Screens */,
+				1BAA0F8F25E15EAE0034549F /* Components */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		1BAA0F8D25E15E820034549F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1BAA0F7C25E15DD60034549F /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1BAA0F8E25E15E9B0034549F /* Injected */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Injected;
+			sourceTree = "<group>";
+		};
+		1BAA0F8F25E15EAE0034549F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		1BAA0F9025E15EB80034549F /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				1BAA0F9425E15F590034549F /* MainView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		1BAA0F9125E15EBF0034549F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1BAA0F7E25E15DD60034549F /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +179,6 @@
 			files = (
 				1BAA0F8025E15DD60034549F /* LaunchScreen.storyboard in Resources */,
 				1BAA0F7D25E15DD60034549F /* Assets.xcassets in Resources */,
-				1BAA0F7B25E15DD50034549F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +189,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BAA0F7825E15DD50034549F /* ViewController.swift in Sources */,
 				1BAA0F7425E15DD50034549F /* AppDelegate.swift in Sources */,
+				1BAA0F9525E15F590034549F /* MainView.swift in Sources */,
 				1BAA0F7625E15DD50034549F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,14 +198,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1BAA0F7925E15DD50034549F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1BAA0F7A25E15DD50034549F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1BAA0F7E25E15DD60034549F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,7 +260,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +315,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -288,7 +332,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 34VDSPZYU9;
-				INFOPLIST_FILE = "Swift interview/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Swift interview/System/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +341,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sosinvitalii.Swift-interview";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,7 +352,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 34VDSPZYU9;
-				INFOPLIST_FILE = "Swift interview/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Swift interview/System/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +361,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sosinvitalii.Swift-interview";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
