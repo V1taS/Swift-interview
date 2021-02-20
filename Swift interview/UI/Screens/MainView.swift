@@ -9,7 +9,28 @@ import SwiftUI
 
 struct MainView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            ScrollView(.vertical, showsIndicators: false) {
+                VStack(alignment: .center, spacing: 16) {
+                    
+                    NavigationLink(
+                        destination: JuniorView()) {
+                        MainCellView(title: "Junior")
+                    }
+                    
+                    NavigationLink(
+                        destination: MiddleView()) {
+                        MainCellView(title: "Middle")
+                    }
+                    
+                    
+                    Spacer()
+                        
+                        .navigationBarTitle("Swift interview")
+                }
+                .padding(.top, 24)
+            }
+        }
     }
 }
 
